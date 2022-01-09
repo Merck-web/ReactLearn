@@ -1,0 +1,22 @@
+.search {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+.radioBox {
+  label:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #8e24aa;
+}
+[type="radio"].with-gap:checked + span:before {
+  border: 2px solid #8e24aa;
+}
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #8e24aa;
+}

@@ -1,13 +1,22 @@
 .movies {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
 }
 .movie {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .flexCard {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-image {
+  img {
+    width: 280px !important;
+    height: 400px;
+  }
+}
+.input-field input[type="search"]:focus:not(.browser-default) {
+  border-bottom: 1px solid #444;
 }

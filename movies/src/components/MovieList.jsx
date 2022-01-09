@@ -1,8 +1,12 @@
-import { Movie } from './Movie/Movie'
+import { Movie } from "./Movie/Movie";
 function MovieList(props) {
-    const { movies } = props;
-    return <div className="movies">{movies.map(movie => (
+  const { movies } = props;
+  return (
+    <div className='movies'>
+      {movies.map((movie) => (
         <Movie key={movie.imdbID} {...movie} />
-    ))}</div>
+      ))}
+    </div>
+  );
 }
-export { MovieList }
+export { MovieList };
