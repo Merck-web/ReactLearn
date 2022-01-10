@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 class Search extends React.Component {
   state = {
-    search: "",
+    search: "matrix",
     type: "all",
   };
   handleKey = (event) => {
